@@ -52,7 +52,7 @@ window.onload = function () {
 
 
     var bgKillers = new SpaceShip(0, 7, 0, "sprites/ryder_wild.png", 10);
-    var bgKillersTwo = new SpaceShip(-123, 10, 0, "sprites/ryder_wild.png", 10);
+    var bgKillersTwo = new SpaceShip(-160, 10, 0, "sprites/ryder_wild.png", 10);
     var bgCloud = new SpaceShip(1400, 0, 0, "sprites/cloud_9.png", 10);
     var bgCloudZero = new SpaceShip(1400, 0, 0, "sprites/cloud_3.png", 10);
     var bgCloudNine = new SpaceShip(1400, 0, 0, "sprites/cloud_9.png", 10);
