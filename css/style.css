@@ -29,7 +29,7 @@ html {
 .hero {
     margin-bottom: .3em;
     margin-right: 0;
-    width: 7.2em;
+    width: 7.3em;
     color: rgba(255, 255, 255, .49);
 }
 
@@ -235,7 +235,3 @@ header {
     align-items: center;
 }
 
-.breathing {
-    color: rgba(255, 255, 255, .20);
-    margin: 1em;
-}
