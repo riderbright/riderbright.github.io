@@ -79,6 +79,7 @@ ul {
 #row {
     min-height: 12.25em;
     font-size: .8em;
+    width:100%;
     border: 2px solid;
     border-color: rgba(255, 255, 255, .40);
     overflow-x: hidden;
@@ -95,6 +96,7 @@ ul {
 #row:hover {
     height: 12.25em;
     font-size: .8em;
+    width:100%;
     border: 2px solid;
     border-color: rgba(255, 255, 255, .90);
     overflow-x: hidden;
