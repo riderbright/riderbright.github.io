@@ -12,7 +12,8 @@ html {
 
 .add-blang {
     font-size: 1.1em;
-    width: 27em;
+    padding:-4em;
+    width: 23em;
     margin-left: 3em;
     margin-right: 0 auto;
     margin-bottom: 1em;
@@ -77,14 +78,13 @@ ul {
 
 #row {
     min-height: 12.25em;
-    width: 100%;
     font-size: .8em;
     border: 2px solid;
     border-color: rgba(255, 255, 255, .40);
     overflow-x: hidden;
     overflow-y: hidden;
     float: left;
-    margin-right: 2em;
+    margin-right: 1%;
     margin-left: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -94,14 +94,13 @@ ul {
 
 #row:hover {
     height: 12.25em;
-    width: 100%;
     font-size: .8em;
     border: 2px solid;
     border-color: rgba(255, 255, 255, .90);
     overflow-x: hidden;
     overflow-y: hidden;
     float: left;
-    margin-right: 2em;
+    margin-right: 1%;
     margin-left: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
