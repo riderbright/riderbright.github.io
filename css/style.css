@@ -28,13 +28,11 @@ html {
 
 .hero {
     margin-bottom: .3em;
-    width: 7.4em;
+    width: 7.18em;
     color: rgba(255, 255, 255, .49);
 }
 
 .hero:hover {
-    margin-bottom: .3em;
-    width: 7.4em;
     color: rgba(255, 255, 255, .90);
 }
 
