@@ -14,7 +14,7 @@ html {
     font-size: 1.1em;
     width: 27em;
     margin-left: 3em;
-    margin-right: 0 auto;
+    margin-right: 1%;
     margin-bottom: 1em;
     margin-top: 0 auto;
     position: relative;
@@ -28,11 +28,14 @@ html {
 
 .hero {
     margin-bottom: .3em;
-    width: 7.18em;
+    margin-right: 1%;
+    width: 7.1em;
     color: rgba(255, 255, 255, .49);
 }
 
 .hero:hover {
+    margin-bottom: .3em;
+    width: 7.4em;
     color: rgba(255, 255, 255, .90);
 }
 
@@ -76,13 +79,13 @@ ul {
 #row {
     min-height: 12.25em;
     font-size: .8em;
-    width:110%;
+    width:100%;
     border: 2px solid;
     border-color: rgba(255, 255, 255, .40);
     overflow-x: hidden;
     overflow-y: hidden;
     float: left;
-    margin-right: 0 auto;
+    margin-right: 1%;
     margin-left: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -93,7 +96,7 @@ ul {
 #row:hover {
     height: 12.25em;
     font-size: .8em;
-    width:110%;
+    width:100%;
     border: 2px solid;
     border-color: rgba(255, 255, 255, .90);
     overflow-x: hidden;

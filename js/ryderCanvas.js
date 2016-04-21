@@ -53,9 +53,6 @@ window.onload = function () {
     var bgKillers = new SpaceShip(0, 7, 0, "sprites/ryder_wild.png", 10);
     var bgKillersTwo = new SpaceShip(-160, 10, 0, "sprites/ryder_wild.png", 10);
     var bgKillersThree = new SpaceShip(-195, -10, 0, "sprites/ryder_stylewrite_purp.png", 10);
-    var bgCloud = new SpaceShip(1400, 0, 0, "sprites/cloud_9.png", 10);
-    var bgCloudZero = new SpaceShip(1400, 0, 0, "sprites/cloud_3.png", 10);
-    var bgCloudNine = new SpaceShip(1400, 0, 0, "sprites/cloud_9.png", 10);
     var bgNebula = new SpaceShip(900, 70, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaOne = new SpaceShip(1400, 66, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaTwo = new SpaceShip(0, 68, 0, "sprites/cloud_gas.png", 10);
@@ -66,10 +63,10 @@ window.onload = function () {
     var cashFanThree = new SpaceShip(-300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var cashFanFour = new SpaceShip(1300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var lightning = function () {
-        if (bgCloudZero.x % 6) {
+        if (cashFan.x % 6) {
             bgRange = true;
         }
-        if (bgCloudZero.x % 1) {
+        if (cashFan.x % 1) {
             bgRange = false;
         }
     }
@@ -90,27 +87,20 @@ window.onload = function () {
 
     var update = function (modifier) {
 
-        if (bgCloud.gameMove === 10) {
-            bgCloud.x -= 1.8;
-            bgCloudNine.x -= 2.4;
+        if (bgKillers.gameMove === 10) {
+           
             bgKillers.x -= 1;
             bgNebulaTwo.x -= 1.2;
             bgNebulaOne.x -= 1.7;
             bgNebula.x -= 2.2;
-            bgCloudZero.x -= .5;
-            cashFan.x += .9;
-            cashFanTwo.x += .9;
-            cashFanThree.x += .9;
-            cashFanFour.x += .9;
+            cashFan.x += .5;
+            cashFanTwo.x += .5;
+            cashFanThree.x += .5;
+            cashFanFour.x += .5;
             canvas.width = window.innerWidth;
 
         }
-        if (bgCloud.x < -2000) {
-            bgCloud.x = 2100;
-        }
-        if (bgCloudNine.x < -1875) {
-            bgCloudNine.x = 1950;
-        }
+       
         if (bgKillers.x < -3485) {
             bgKillers.x = 3450;
         }
@@ -155,7 +145,6 @@ window.onload = function () {
 
             context.drawImage(bgKillersThree.image, bgKillersThree.x, bgKillersThree.y);
             context.drawImage(bgKillersThree.image, bgKillersThree.x + 4, bgKillersThree.y);
-            //context.drawImage(bgKillersThree.image, bgKillersThree.x+77, bgKillersThree.y-14);
             context.drawImage(flashOne.image, flashOne.x, flashOne.y);
 
 
@@ -168,8 +157,6 @@ window.onload = function () {
             context.drawImage(bgNebula.image, bgNebula.x, bgNebula.y);
             context.drawImage(bgNebulaOne.image, bgNebulaOne.x, bgNebulaOne.y);
             context.drawImage(bgNebulaTwo.image, bgNebulaTwo.x, bgNebulaTwo.y);
-
-            //context.drawImage(bgKillers.image, bgKillers.x, bgKillers.y);
             context.drawImage(bgKillersTwo.image, bgKillersTwo.x, bgKillersTwo.y);
 
         }
@@ -201,6 +188,3 @@ window.onload = function () {
 
 };
 
-//.custom {
-//   cursor: url(images/my-cursor.png), auto;
-//}
