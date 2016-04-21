@@ -68,7 +68,7 @@ ul {
 }
 
 .index {
-    min-height: 366px;
+    min-height: 369px;
 }
 
 .row {
@@ -88,7 +88,7 @@ ul {
     margin-top: 1.23em;
     margin-bottom: 1em;
     position: relative;
-    background-color: rgba(255, 255, 255, .07);
+    background-color: rgba(255, 255, 255, .06);
 }
 
 #row:hover {
@@ -158,9 +158,9 @@ header {
     overflow-y: hidden;
     overflow-x: hidden;
     border: 2px solid rgba(255, 255, 255, .50);
-    margin-top: .2em;
+    margin-top: .3em;
     margin-bottom: 1em;
-    margin-left: -.5em;
+    margin-left: -.6em;
     object-fit: cover;
     object-position: top;
     position: absolute;
@@ -176,9 +176,9 @@ header {
     border: 2px solid rgba(255, 255, 255, .70);
     box-shadow: 0 0 .09em #52674A;
     backface-visibility: visible;
-    margin-top: .2em;
+    margin-top: .3em;
     margin-bottom: 1em;
-    margin-left: -.5em;
+    margin-left: -.6em;
     object-fit: cover;
     opacity: 100%;
     position: absolute;
