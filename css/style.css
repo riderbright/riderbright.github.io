@@ -1,5 +1,6 @@
 html {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1);;
+
 }
 
 * {
@@ -13,7 +14,7 @@ html {
     font-size: 1.1em;
     width: 27em;
     margin-left: 3em;
-    margin-right: 0;
+    margin-right: 0 auto;
     margin-bottom: 1em;
     margin-top: 0 auto;
     position: relative;
@@ -27,12 +28,13 @@ html {
 
 .hero {
     margin-bottom: .3em;
-    width: 11.7em;
+    width: 7.4em;
     color: rgba(255, 255, 255, .49);
 }
+
 .hero:hover {
     margin-bottom: .3em;
-    width: 11.7em;
+    width: 7.4em;
     color: rgba(255, 255, 255, .90);
 }
 
@@ -86,7 +88,7 @@ ul {
     margin-left: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
-    position: relative; 
+    position: relative;
     background-color: rgba(255, 255, 255, .07);
 }
 
@@ -138,20 +140,17 @@ ul {
     position: relative;
 }
 
-
 .btn-fresh:hover {
     border: 2px solid rgba(255, 255, 255, .37);
     box-shadow: 0 0 .09em #600aFA;
 }
 
-
 header {
     width: 100vw;
     height: 200px;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
-#header{
+
+#header {
     width: auto;
 }
 
@@ -183,21 +182,47 @@ header {
     position: absolute;
     float: left;
 }
-#summary{
+
+#summary {
     font-size: 1em;
     margin-left: -11px;
     margin-bottom: 2em;
     text-align: center
-    
 }
-#ruleOne{
+
+#ruleOne {
     margin-left: 7px;
     width: 22em;
     border-color: rgba(255, 255, 255, .40);
 }
-.blangList{
-    
+#ruleZero {
+    margin-top: .18em;
+    margin-left: 7px;
+    width: 22em;
+    border-color: rgba(255, 255, 255, .40);
 }
 
+.blangList {}
+#email{
+    margin-top: .18em;
+}
+#email:hover {
+    color: rgba(255, 255, 255, .90);
+}
 
+#twitter:hover {
+    content: URL("../sprites/twitter_logo_white_hover.png");
+}
+
+#github:hover {
+    content: URL("../sprites/github_logo_white_hover.png");
+}
+
+#linkedin:hover {
+    content: URL("../sprites/linkedin_logo_white_hover.png");
+}
+
+#summary:hover {
+    color: rgba(255, 255, 255, .90);
+}
 

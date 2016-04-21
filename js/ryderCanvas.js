@@ -1,4 +1,3 @@
-
 var canvas;
 var myAudio
 var context;
@@ -53,12 +52,13 @@ window.onload = function () {
 
     var bgKillers = new SpaceShip(0, 7, 0, "sprites/ryder_wild.png", 10);
     var bgKillersTwo = new SpaceShip(-160, 10, 0, "sprites/ryder_wild.png", 10);
+    var bgKillersThree = new SpaceShip(-195, -10, 0, "sprites/ryder_stylewrite_purp.png", 10);
     var bgCloud = new SpaceShip(1400, 0, 0, "sprites/cloud_9.png", 10);
     var bgCloudZero = new SpaceShip(1400, 0, 0, "sprites/cloud_3.png", 10);
     var bgCloudNine = new SpaceShip(1400, 0, 0, "sprites/cloud_9.png", 10);
     var bgNebula = new SpaceShip(900, 70, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaOne = new SpaceShip(1400, 66, 0, "sprites/cloud_gas.png", 10);
-    var bgNebulaTwo = new SpaceShip(100, 68, 0, "sprites/cloud_gas.png", 10);
+    var bgNebulaTwo = new SpaceShip(0, 68, 0, "sprites/cloud_gas.png", 10);
     var flashOne = new SpaceShip(0, 0, 0, "sprites/flash.png", 10);
     var flashTwo = new SpaceShip(-1200, 0, 0, "sprites/nebulous_gas.png", 10);
     var cashFan = new SpaceShip(-1055, 0, 0, "sprites/cash_wreath_ghost.png", 10);
@@ -149,8 +149,13 @@ window.onload = function () {
         if (bgReady) {
             context.drawImage(bgImage, 0, 0);
 
+
         }
         if (bgRange) {
+
+            context.drawImage(bgKillersThree.image, bgKillersThree.x, bgKillersThree.y);
+            context.drawImage(bgKillersThree.image, bgKillersThree.x + 4, bgKillersThree.y);
+            //context.drawImage(bgKillersThree.image, bgKillersThree.x+77, bgKillersThree.y-14);
             context.drawImage(flashOne.image, flashOne.x, flashOne.y);
 
 
@@ -160,16 +165,16 @@ window.onload = function () {
             context.drawImage(cashFanTwo.image, cashFanTwo.x, cashFanTwo.y);
             context.drawImage(cashFanThree.image, cashFanThree.x, cashFanThree.y);
             context.drawImage(cashFanFour.image, cashFanFour.x, cashFanFour.y);
-            context.drawImage(bgCloud.image, bgCloud.x, bgCloud.y);
-            context.drawImage(bgCloudNine.image, bgCloudNine.x, bgCloudNine.y);
             context.drawImage(bgNebula.image, bgNebula.x, bgNebula.y);
-            //context.drawImage(bgCloudZero.image, bgCloudZero.x, bgCloudZero.y);
             context.drawImage(bgNebulaOne.image, bgNebulaOne.x, bgNebulaOne.y);
             context.drawImage(bgNebulaTwo.image, bgNebulaTwo.x, bgNebulaTwo.y);
+
             //context.drawImage(bgKillers.image, bgKillers.x, bgKillers.y);
             context.drawImage(bgKillersTwo.image, bgKillersTwo.x, bgKillersTwo.y);
 
         }
+
+
 
     }
     var tickTock = function () {
