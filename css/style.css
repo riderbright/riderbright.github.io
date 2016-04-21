@@ -82,7 +82,7 @@ ul {
     overflow-x: hidden;
     overflow-y: hidden;
     float: left;
-    margin-right: 1%;
+    margin-right: 0 auto;
     margin-left: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
