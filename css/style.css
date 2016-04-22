@@ -79,7 +79,7 @@ ul {
     font-size: .8em;
     width: 100%;
     border: 3px solid;
-    border-color:  rgba(255, 255, 255, .20);
+    border-color: rgba(255, 255, 255, .20);
     overflow-x: hidden;
     overflow-y: hidden;
     margin-right: 3em;
@@ -204,7 +204,21 @@ header {
     border-color: rgba(255, 255, 255, .40);
 }
 
+#summary:hover {
+    color: rgba(255, 255, 255, .90);
+}
 
+#ryderEmblem:hover {
+    opacity: .9;
+}
+
+#ryderEmblem {
+    opacity: .49;
+}
+
+#ryderEmblem:hover {
+    opacity:
+}
 
 #email {
     margin-top: .18em;
@@ -215,22 +229,29 @@ header {
 }
 
 #twitter:hover {
-    content: URL("../sprites/twitter_logo_white_hover.png");
+    opacity: .9;
+}
+
+#twitter {
+    opacity: .49;
 }
 
 #github:hover {
-    content: URL("../sprites/github_logo_white_hover.png");
+    opacity: .9;
+}
+
+#github {
+    opacity: .49;
 }
 
 #linkedin:hover {
-    content: URL("../sprites/linkedin_logo_white_hover.png");
+    opacity: .9;
 }
 
-#summary:hover {
-    color: rgba(255, 255, 255, .90);
+#linkedin {
+    opacity: .49;
 }
 
 .vertical-align {
     align-items: center;
 }
-
