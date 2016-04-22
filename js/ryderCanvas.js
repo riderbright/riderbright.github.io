@@ -50,7 +50,7 @@ window.onload = function () {
     //use speed * modifier
 
 
-    var bgKillers = new SpaceShip(0, -20, 0, "sprites/ryder_white_purp_blue.png", 10);
+    var bgKillers = new SpaceShip(0, -20, 0, "sprites/ryder_stylewrite_purp.png", 10);
     var bgKillersTwo = new SpaceShip(-160, 10, 0, "sprites/ryder_wild.png", 10);
     var bgKillersThree = new SpaceShip(-184,3, 0, "sprites/ryder_stylewrite_purp.png", 10);
     var bgKillersFour = new SpaceShip(-144, -51, 0, "sprites/ryder_white_neon.png", 10);
@@ -157,7 +157,7 @@ window.onload = function () {
 
         }
         if (canvasReady) {
-            context.drawImage(bgKillers.image, bgKillers.x, bgKillers.y);
+            //context.drawImage(bgKillers.image, bgKillers.x, bgKillers.y);
             context.drawImage(cashFan.image, cashFan.x, cashFan.y);
             context.drawImage(cashFanTwo.image, cashFanTwo.x, cashFanTwo.y);
             context.drawImage(cashFanThree.image, cashFanThree.x, cashFanThree.y);
