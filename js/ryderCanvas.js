@@ -52,10 +52,12 @@ window.onload = function () {
 
     var bgKillers = new SpaceShip(0, 7, 0, "sprites/ryder_wild.png", 10);
     var bgKillersTwo = new SpaceShip(-160, 10, 0, "sprites/ryder_wild.png", 10);
-    var bgKillersThree = new SpaceShip(-195, -10, 0, "sprites/ryder_stylewrite_purp.png", 10);
-    var bgNebula = new SpaceShip(900, 70, 0, "sprites/cloud_gas.png", 10);
-    var bgNebulaOne = new SpaceShip(1400, 66, 0, "sprites/cloud_gas.png", 10);
-    var bgNebulaTwo = new SpaceShip(0, 68, 0, "sprites/cloud_gas.png", 10);
+    var bgKillersThree = new SpaceShip(-184,3, 0, "sprites/ryder_stylewrite_purp.png", 10);
+    var bgKillersFour = new SpaceShip(-144, -51, 0, "sprites/ryder_white_neon.png", 10);
+    var bgNebula = new SpaceShip(600, 30, 0, "sprites/cloud_gas.png", 10);
+    var bgNebulaOne = new SpaceShip(1600, 42, 0, "sprites/cloud_gas.png", 10);
+    var bgNebulaTwo = new SpaceShip(0, 24, 0, "sprites/cloud_gas.png", 10);
+     var bgNebulaThree = new SpaceShip(-200, 34, 0, "sprites/cloud_gas.png", 10);
     var flashOne = new SpaceShip(0, 0, 0, "sprites/flash.png", 10);
     var flashTwo = new SpaceShip(-1200, 0, 0, "sprites/nebulous_gas.png", 10);
     var cashFan = new SpaceShip(-1055, 0, 0, "sprites/cash_wreath_ghost.png", 10);
@@ -88,11 +90,12 @@ window.onload = function () {
     var update = function (modifier) {
 
         if (bgKillers.gameMove === 10) {
-           
+
             bgKillers.x -= 1;
-            bgNebulaTwo.x -= 1.2;
-            bgNebulaOne.x -= 1.7;
-            bgNebula.x -= 2.2;
+            bgNebulaTwo.x -= 3;
+            bgNebulaOne.x -= 2;
+            bgNebula.x -= 2;
+            bgNebulaThree.x += 2.4;
             cashFan.x += .5;
             cashFanTwo.x += .5;
             cashFanThree.x += .5;
@@ -100,7 +103,7 @@ window.onload = function () {
             canvas.width = window.innerWidth;
 
         }
-       
+
         if (bgKillers.x < -3485) {
             bgKillers.x = 3450;
         }
@@ -115,6 +118,9 @@ window.onload = function () {
         }
         if (bgNebulaTwo.x < -2002) {
             bgNebulaTwo.x = 2000;
+        }
+        if (bgNebulaThree.x > 2002) {
+            bgNebulaThree.x = -2000;
         }
         if (cashFan.x > 2020) {
             cashFan.x = -1060;
@@ -143,8 +149,9 @@ window.onload = function () {
         }
         if (bgRange) {
 
-            context.drawImage(bgKillersThree.image, bgKillersThree.x, bgKillersThree.y);
-            context.drawImage(bgKillersThree.image, bgKillersThree.x + 4, bgKillersThree.y);
+            context.drawImage(bgKillersThree.image, bgKillersThree.x+6, bgKillersThree.y - 8);
+            context.drawImage(bgKillersThree.image, bgKillersThree.x-6, bgKillersThree.y - 8);
+            context.drawImage(bgKillersThree.image, bgKillersThree.x, bgKillersThree.y - 10);
             context.drawImage(flashOne.image, flashOne.x, flashOne.y);
 
 
@@ -157,6 +164,8 @@ window.onload = function () {
             context.drawImage(bgNebula.image, bgNebula.x, bgNebula.y);
             context.drawImage(bgNebulaOne.image, bgNebulaOne.x, bgNebulaOne.y);
             context.drawImage(bgNebulaTwo.image, bgNebulaTwo.x, bgNebulaTwo.y);
+            context.drawImage(bgNebulaThree.image, bgNebulaThree.x, bgNebulaThree.y);
+            context.drawImage(bgKillersFour.image, bgKillersFour.x, bgKillersFour.y);
             context.drawImage(bgKillersTwo.image, bgKillersTwo.x, bgKillersTwo.y);
 
         }
@@ -168,7 +177,7 @@ window.onload = function () {
         var now = Date.now();
         var delta = now - then;
 
-        update(delta / 1200);
+        update(delta / 1000);
         drawGame();
         then = now;
         requestAnimationFrame(tickTock);
@@ -187,4 +196,3 @@ window.onload = function () {
 
 
 };
-
