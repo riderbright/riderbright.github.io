@@ -178,7 +178,7 @@ window.onload = function () {
         var now = Date.now();
         var delta = now - then;
 
-        update(delta / 100);
+        update(delta / 1600);
         drawGame();
         then = now;
         requestAnimationFrame(tickTock);
