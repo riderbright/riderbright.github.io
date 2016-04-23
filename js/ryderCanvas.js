@@ -101,7 +101,6 @@ window.onload = function () {
             cashFanThree.x += .5;
             cashFanFour.x += .5;
             canvas.width = window.innerWidth;
-
         }
 
         if (bgKillers.x < -3485) {
