@@ -156,9 +156,11 @@ header {
     
 }
 #topBox{
-    width: 100vw;
+    width: 100%;
     height: 1.23em;
     background-color: black;
+    border: none;
+    margin: 0 auto;
 }
 
 .img {
