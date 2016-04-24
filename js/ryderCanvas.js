@@ -1,5 +1,4 @@
 var canvas;
-var myAudio
 var context;
 var bgImage;
 var bgRange;
@@ -11,7 +10,7 @@ var keysDown;
 
 window.onload = function () {
 
-
+    
     canvas = document.createElement("canvas");
     context = canvas.getContext("2d");
     canvas.width = window.innerWidth;
@@ -27,7 +26,6 @@ window.onload = function () {
 
     };
     bgImage.src = "sprites/canvas_4.png";
-
 
     var SpaceShip = function (x, y, speed, src, gameMove) {
         this.x = x;
@@ -88,7 +86,7 @@ window.onload = function () {
 
 
     var update = function (modifier) {
-
+        canvas.width = window.innerWidth;
         if (bgKillers.gameMove === 10) {
 
             bgKillers.x -= 1;
@@ -100,7 +98,7 @@ window.onload = function () {
             cashFanTwo.x += .5;
             cashFanThree.x += .5;
             cashFanFour.x += .5;
-            canvas.width = window.innerWidth;
+           
         }
 
         if (bgKillers.x < -3485) {
@@ -109,28 +107,28 @@ window.onload = function () {
         if (bgKillersTwo.x < -3485) {
             bgKillersTwo.x = 3450;
         }
-        if (bgNebulaOne.x < -2002) {
+        if (bgNebulaOne.x < - 2020) {
             bgNebulaOne.x = 2000;
         }
-        if (bgNebula.x < -2002) {
+        if (bgNebula.x < - 2020) {
             bgNebula.x = 2000;
         }
-        if (bgNebulaTwo.x < -2002) {
+        if (bgNebulaTwo.x < - 2020) {
             bgNebulaTwo.x = 2000;
         }
-        if (bgNebulaThree.x > 2002) {
+        if (bgNebulaThree.x >  2020) {
             bgNebulaThree.x = -2000;
         }
         if (cashFan.x > 2020) {
             cashFan.x = -1060;
         }
-        if (cashFanTwo.x > 2020) {
+        if (cashFanTwo.x >  2020) {
             cashFanTwo.x = -1060
         }
-        if (cashFanThree.x > 2020) {
+        if (cashFanThree.x >  2020) {
             cashFanThree.x = -1060
         }
-        if (cashFanFour.x > 2020) {
+        if (cashFanFour.x >  2020) {
             cashFanFour.x = -1060
         }
         if (bgKillers.x % 300) {
@@ -181,7 +179,7 @@ window.onload = function () {
         var now = Date.now();
         var delta = now - then;
 
-        update(delta / 1600);
+        update(delta / 1800);
         drawGame();
         then = now;
         requestAnimationFrame(tickTock);
