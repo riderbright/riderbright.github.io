@@ -1,9 +1,9 @@
 html {
-    background-color: rgba(0, 0, 0, 1);
-    background-image: url("../sprites/bgPattern.svg");
+    background-color: rgba(10, 10, 10, 1);
+    background-image: url("../sprites/bgPatternOne.svg");
     background-size: cover;
-    background-position: left;
-
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 * {
