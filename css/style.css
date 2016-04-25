@@ -3,7 +3,7 @@ html {
     background-image: url("../sprites/bgPatternOne.svg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
 * {
