@@ -3,12 +3,12 @@ var context;
 var bgImage;
 var bgRange;
 var bgReady;
-var bgCloud;
 var canvasReady;
 var keysDown;
 
 
 window.onload = function () {
+    
 
 
     canvas = document.createElement("canvas");
