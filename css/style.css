@@ -184,7 +184,7 @@ ul {
     height: 9em;
     overflow-y: hidden;
     overflow-x: hidden;
-    border: 2px solid rgba(255, 255, 255, .70);
+    border: 2px solid rgba(255, 255, 255, 1);
     box-shadow: 0 0 .09em #52674A;
     backface-visibility: visible;
     margin-top: .3em;
