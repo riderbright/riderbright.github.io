@@ -10,6 +10,16 @@ html {
     font-family: 'Armata', sans-serif;
     color: rgba(255, 255, 255, .49);
 }
+header {
+    width: 100vw;
+    height: 200px;
+     size: cover;
+}
+
+#header {
+    width: auto;
+    
+}
 
 .add-blang {
     font-size: 1.1em;
@@ -145,16 +155,6 @@ ul {
     box-shadow: 0 0 .09em #600aFA;
 }
 
-header {
-    width: 100vw;
-    height: 200px;
-     size: cover;
-}
-
-#header {
-    width: auto;
-    
-}
 #topBox{
     width: 100%;
     height: 1.23em;
