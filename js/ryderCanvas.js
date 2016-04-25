@@ -8,7 +8,7 @@ var keysDown;
 
 
 window.onload = function () {
-    
+
 
 
     canvas = document.createElement("canvas");
@@ -62,6 +62,8 @@ window.onload = function () {
     var cashFanTwo = new SpaceShip(510, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanThree = new SpaceShip(-300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var cashFanFour = new SpaceShip(1300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
+    var cashFanFive = new SpaceShip(-1845, 0, 0, "sprites/cash_wreath_ghost.png", 10);
+    var cashFanSix = new SpaceShip(-2190, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var lightning = function () {
         if (cashFan.x % 6) {
             bgRange = true;
@@ -86,57 +88,64 @@ window.onload = function () {
 
 
     var update = function (modifier) {
-        if (canvasReady) {
-            canvas.width = window.innerWidth;
-            if (bgKillers.gameMove === 10) {
+        canvas.width = window.innerWidth;
+        if (bgKillers.gameMove === 10) {
 
-                bgKillers.x -= 1;
-                bgNebulaTwo.x -= 3;
-                bgNebulaOne.x -= 2;
-                bgNebula.x -= 2;
-                bgNebulaThree.x += 2.4;
-                cashFan.x += .5;
-                cashFanTwo.x += .5;
-                cashFanThree.x += .5;
-                cashFanFour.x += .5;
+            bgKillers.x -= 1;
+            bgNebulaTwo.x -= 3;
+            bgNebulaOne.x -= 2;
+            bgNebula.x -= 2;
+            bgNebulaThree.x += 2.4;
+            cashFan.x += .5;
+            cashFanTwo.x += .5;
+            cashFanThree.x += .5;
+            cashFanFour.x += .5;
+            cashFanFive.x += .5;
+            cashFanSix.x += .5;
 
-            }
+        }
 
-            if (bgKillers.x < -3485) {
-                bgKillers.x = 3450;
-            }
-            if (bgKillersTwo.x < -3485) {
-                bgKillersTwo.x = 3450;
-            }
-            if (bgNebulaOne.x < -2020) {
-                bgNebulaOne.x = 2000;
-            }
-            if (bgNebula.x < -2020) {
-                bgNebula.x = 2000;
-            }
-            if (bgNebulaTwo.x < -2020) {
-                bgNebulaTwo.x = 2000;
-            }
-            if (bgNebulaThree.x > 2020) {
-                bgNebulaThree.x = -2000;
-            }
-            if (cashFan.x > 2020) {
-                cashFan.x = -1060;
-            }
-            if (cashFanTwo.x > 2020) {
-                cashFanTwo.x = -1060
-            }
-            if (cashFanThree.x > 2020) {
-                cashFanThree.x = -1060
-            }
-            if (cashFanFour.x > 2020) {
-                cashFanFour.x = -1060
-            }
-            if (bgKillers.x % 300) {
-                lightning();
-            }
+        if (bgKillers.x < -3485) {
+            bgKillers.x = 3450;
+        }
+        if (bgKillersTwo.x < -3485) {
+            bgKillersTwo.x = 3450;
+        }
+        if (bgNebulaOne.x < -2020) {
+            bgNebulaOne.x = 2000;
+        }
+        if (bgNebula.x < -2020) {
+            bgNebula.x = 2000;
+        }
+        if (bgNebulaTwo.x < -2020) {
+            bgNebulaTwo.x = 2000;
+        }
+        if (bgNebulaThree.x > 2020) {
+            bgNebulaThree.x = -2000;
+        }
+        if (cashFan.x > 2810) {
+            cashFan.x = -1060;
+        }
+        if (cashFanTwo.x > 2810) {
+            cashFanTwo.x = -1060
+        }
+        if (cashFanThree.x > 2810) {
+            cashFanThree.x = -1060
+        }
+        if (cashFanFour.x > 2810) {
+            cashFanFour.x = -1060
+        }
+        if (cashFanFive.x > 2810) {
+            cashFanFive.x = -1060
+        }
+        if (cashFanSix.x > 2810) {
+            cashFanSix.x = -1060
+        }
+        if (bgKillers.x % 300) {
+            lightning();
         }
     }
+
 
 
     var drawGame = function () {
@@ -162,6 +171,8 @@ window.onload = function () {
             context.drawImage(cashFanTwo.image, cashFanTwo.x, cashFanTwo.y);
             context.drawImage(cashFanThree.image, cashFanThree.x, cashFanThree.y);
             context.drawImage(cashFanFour.image, cashFanFour.x, cashFanFour.y);
+            context.drawImage(cashFanFive.image, cashFanFive.x, cashFanFive.y);
+            context.drawImage(cashFanSix.image, cashFanSix.x, cashFanSix.y);
             context.drawImage(bgNebula.image, bgNebula.x, bgNebula.y);
             context.drawImage(bgNebulaOne.image, bgNebulaOne.x, bgNebulaOne.y);
             context.drawImage(bgNebulaTwo.image, bgNebulaTwo.x, bgNebulaTwo.y);
