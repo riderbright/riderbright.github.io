@@ -1,24 +1,23 @@
 html {
-    background-color: rgba(16, 16, 18, 1);
+    background-color: rgba(18, 18, 19, 1);
     background-image: url("../sprites/bgPatternOne.svg");
     background-size: cover;
     background-position: center;
-    
 }
 
 * {
     font-family: 'Armata', sans-serif;
-    color: rgba(255, 255, 255, .49);
+    color: rgba(255, 255, 255, .52);
 }
+
 header {
     width: 100vw;
     height: 200px;
-     size: cover;
+    size: cover;
 }
 
 #header {
     width: auto;
-    
 }
 
 .add-blang {
@@ -112,7 +111,7 @@ ul {
     overflow-y: hidden;
     margin-right: 3em;
     margin-left: 3em;
-     margin-top: 0 auto;
+    margin-top: 0 auto;
     margin-bottom: 1.333em;
     position: relative;
     text-shadow: 0 0 .01em rgba(255, 255, 255, .40);
@@ -154,7 +153,6 @@ ul {
     border: 2px solid rgba(255, 255, 255, .37);
     box-shadow: 0 0 .09em #600aFA;
 }
-
 
 .img {
     width: 60%;
@@ -218,18 +216,20 @@ ul {
 }
 
 #ryderEmblem {
-    opacity: .49;
+    opacity: .33;
 }
 
 #ryderEmblem:hover {
-    opacity:
+    opacity: 1;
 }
 
 #email {
+    opacity: .49;
     margin-top: .18em;
 }
 
 #email:hover {
+    opacity: 1;
     color: rgba(255, 255, 255, .90);
 }
 
@@ -238,7 +238,7 @@ ul {
 }
 
 #twitter {
-    opacity: .49;
+    opacity: .33;
 }
 
 #github:hover {
@@ -246,7 +246,7 @@ ul {
 }
 
 #github {
-    opacity: .49;
+    opacity: .33;
 }
 
 #linkedin:hover {
@@ -254,7 +254,7 @@ ul {
 }
 
 #linkedin {
-    opacity: .49;
+    opacity: .33;
 }
 
 .vertical-align {

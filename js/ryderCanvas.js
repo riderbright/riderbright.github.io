@@ -151,7 +151,7 @@ window.onload = function () {
             context.drawImage(bgKillersThree.image, bgKillersThree.x + 6, bgKillersThree.y - 8);
             context.drawImage(bgKillersThree.image, bgKillersThree.x - 6, bgKillersThree.y - 8);
             context.drawImage(bgKillersThree.image, bgKillersThree.x, bgKillersThree.y - 10);
-            context.drawImage(bgKillersFour.image, bgKillersFour.x+4, bgKillersFour.y+2);
+            context.drawImage(bgKillersFour.image, bgKillersFour.x + 4, bgKillersFour.y + 2);
             context.drawImage(flashOne.image, flashOne.x, flashOne.y);
 
 
