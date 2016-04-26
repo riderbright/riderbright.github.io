@@ -103,38 +103,38 @@ window.onload = function () {
 
         }
 
-        if (bgKillers.x < -182) {
+        if (bgKillers.x <= -182) {
             bgKillers.x = -180;
         }
-        if (bgNebulaOne.x < -2400) {
+        if (bgNebulaOne.x <= -2400) {
             bgNebulaOne.x = 2810;
         }
         if (bgNebula.x < -2400) {
             bgNebula.x = 2810;
         }
-        if (bgNebulaTwo.x < -2400) {
+        if (bgNebulaTwo.x <= -2400) {
             bgNebulaTwo.x = 2810;
         }
-        if (bgNebulaThree.x > 2810) {
+        if (bgNebulaThree.x >= 2810) {
             bgNebulaThree.x = -2400;
         }
-        if (cashFan.x > 3460) {
-            cashFan.x = -1160;
+        if (cashFan.x >= 3460) {
+            cashFan.x = -1180;
         }
-        if (cashFanTwo.x > 3460) {
-            cashFanTwo.x = -1160
+        if (cashFanTwo.x >= 3460) {
+            cashFanTwo.x = -1180
         }
-        if (cashFanThree.x > 3460) {
-            cashFanThree.x = -1160
+        if (cashFanThree.x >= 3460) {
+            cashFanThree.x = -1180
         }
-        if (cashFanFour.x > 3460) {
-            cashFanFour.x = -1160
+        if (cashFanFour.x >= 3460) {
+            cashFanFour.x = -1180
         }
-        if (cashFanFive.x > 3460) {
-            cashFanFive.x = -1160
+        if (cashFanFive.x >= 3460) {
+            cashFanFive.x = -1180
         }
-        if (cashFanSix.x > 3460) {
-            cashFanSix.x = -1160
+        if (cashFanSix.x >= 3460) {
+            cashFanSix.x = -1180
         }
         if (cashFanSix.x % 300) {
             lightning();
