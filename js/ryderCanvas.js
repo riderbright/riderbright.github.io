@@ -48,9 +48,8 @@ window.onload = function () {
     //use speed * modifier
 
 
-    var bgKillers = new SpaceShip(-178, 1, 0, "sprites/ryder_stylewrite_purp.png", 10);
+    var bgKillers = new SpaceShip(-180, -10, 0, "sprites/ryder_stylewrite_purp.png", 10);
     var bgKillersTwo = new SpaceShip(-160, 10, 0, "sprites/ryder_wild.png", 10);
-    var bgKillersThree = new SpaceShip(-184, 3, 0, "sprites/ryder_stylewrite_purp.png", 10);
     var bgKillersFour = new SpaceShip(-144, -51, 0, "sprites/ryder_white_neon.png", 10);
     var bgNebula = new SpaceShip(600, 30, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaOne = new SpaceShip(1600, 42, 0, "sprites/cloud_gas.png", 10);
@@ -65,10 +64,10 @@ window.onload = function () {
     var cashFanFive = new SpaceShip(-2490, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanSix = new SpaceShip(-1820, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var lightning = function () {
-        if (bgKillers.x % 6) {
+        if (bgKillers.x % 8) {
             bgRange = true;
         }
-        if (bgKillers.x % 1) {
+        if (bgKillers.x % 2) {
             bgRange = false;
         }
     }
@@ -90,7 +89,7 @@ window.onload = function () {
     var update = function (modifier) {
         if (bgKillers.gameMove === 10) {
 
-            bgKillers.x -= .5;
+            bgKillers.x -= 1;
             bgNebulaTwo.x -= 3;
             bgNebulaOne.x -= 1;
             bgNebula.x -= 2;
@@ -105,7 +104,7 @@ window.onload = function () {
         }
 
         if (bgKillers.x < -182) {
-            bgKillers.x = -178;
+            bgKillers.x = -180;
         }
         if (bgNebulaOne.x < -2400) {
             bgNebulaOne.x = 2810;
@@ -155,9 +154,6 @@ window.onload = function () {
         }
         if (bgRange) {
             context.drawImage(bgKillers.image, bgKillers.x, bgKillers.y);
-            context.drawImage(bgKillersThree.image, bgKillersThree.x + 6, bgKillersThree.y - 8);
-            context.drawImage(bgKillersThree.image, bgKillersThree.x - 6, bgKillersThree.y - 8);
-            context.drawImage(bgKillersThree.image, bgKillersThree.x, bgKillersThree.y - 10);
             context.drawImage(bgKillersFour.image, bgKillersFour.x + 4, bgKillersFour.y + 2);
             context.drawImage(flashOne.image, flashOne.x, flashOne.y);
 
@@ -186,7 +182,7 @@ window.onload = function () {
         var now = Date.now();
         var delta = now - then;
 
-        update(delta / 1600);
+        update(delta / 500);
         drawGame();
         then = now;
         requestAnimationFrame(tickTock);
