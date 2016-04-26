@@ -58,11 +58,11 @@ window.onload = function () {
     var flashOne = new SpaceShip(-4, 0, 0, "sprites/flash.png", 10);
     var flashTwo = new SpaceShip(-1200, 0, 0, "sprites/cloud_gas.png", 10);
     var cashFan = new SpaceShip(-1055, 0, 0, "sprites/cash_wreath_ghost.png", 10);
-    var cashFanTwo = new SpaceShip(500, 0, 0, "sprites/cash_wreath_ghost.png", 10);
+    var cashFanTwo = new SpaceShip(484, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanThree = new SpaceShip(-300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
-    var cashFanFour = new SpaceShip(1300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
+    var cashFanFour = new SpaceShip(1234, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var cashFanFive = new SpaceShip(-2490, 0, 0, "sprites/cash_wreath_ghost.png", 10);
-    var cashFanSix = new SpaceShip(-1820, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
+    var cashFanSix = new SpaceShip(-1776, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var lightning = function () {
         if (bgKillers.x % 8) {
             bgRange = true;
@@ -119,22 +119,22 @@ window.onload = function () {
             bgNebulaThree.x = -2400;
         }
         if (cashFan.x > 3460) {
-            cashFan.x = -1140;
+            cashFan.x = -1160;
         }
         if (cashFanTwo.x > 3460) {
-            cashFanTwo.x = -1140
+            cashFanTwo.x = -1160
         }
         if (cashFanThree.x > 3460) {
-            cashFanThree.x = -1140
+            cashFanThree.x = -1160
         }
         if (cashFanFour.x > 3460) {
-            cashFanFour.x = -1140
+            cashFanFour.x = -1160
         }
         if (cashFanFive.x > 3460) {
-            cashFanFive.x = -1140
+            cashFanFive.x = -1160
         }
         if (cashFanSix.x > 3460) {
-            cashFanSix.x = -1140
+            cashFanSix.x = -1160
         }
         if (cashFanSix.x % 300) {
             lightning();
@@ -182,7 +182,7 @@ window.onload = function () {
         var now = Date.now();
         var delta = now - then;
 
-        update(delta / 500);
+        update(delta / 600);
         drawGame();
         then = now;
         requestAnimationFrame(tickTock);
