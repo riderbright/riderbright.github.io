@@ -55,7 +55,7 @@ window.onload = function () {
     var bgNebulaOne = new SpaceShip(1600, 42, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaTwo = new SpaceShip(0, 24, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaThree = new SpaceShip(-200, 34, 0, "sprites/cloud_gas.png", 10);
-    var flashOne = new SpaceShip(0, 0, 0, "sprites/flash.png", 10);
+    var flashOne = new SpaceShip(-4, 0, 0, "sprites/flash.png", 10);
     var flashTwo = new SpaceShip(-1200, 0, 0, "sprites/cloud_gas.png", 10);
     var cashFan = new SpaceShip(-1055, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanTwo = new SpaceShip(500, 0, 0, "sprites/cash_wreath_ghost.png", 10);
@@ -148,7 +148,7 @@ window.onload = function () {
     var drawGame = function () {
 
         if (bgReady) {
-            context.drawImage(bgImage, 0, 0);
+            context.drawImage(bgImage, -4, 0);
 
 
         }
