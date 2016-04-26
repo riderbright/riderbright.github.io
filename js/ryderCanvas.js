@@ -61,8 +61,8 @@ window.onload = function () {
     var cashFanTwo = new SpaceShip(484, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanThree = new SpaceShip(-300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var cashFanFour = new SpaceShip(1234, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
-    var cashFanFive = new SpaceShip(-2490, 0, 0, "sprites/cash_wreath_ghost.png", 10);
-    var cashFanSix = new SpaceShip(-1776, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
+    var cashFanFive = new SpaceShip(-2600, 0, 0, "sprites/cash_wreath_ghost.png", 10);
+    var cashFanSix = new SpaceShip(-1830, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var lightning = function () {
         if (bgKillers.x % 8) {
             bgRange = true;
