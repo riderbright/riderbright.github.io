@@ -59,11 +59,11 @@ window.onload = function () {
     var flashOne = new SpaceShip(0, 0, 0, "sprites/flash.png", 10);
     var flashTwo = new SpaceShip(-1200, 0, 0, "sprites/cloud_gas.png", 10);
     var cashFan = new SpaceShip(-1055, 0, 0, "sprites/cash_wreath_ghost.png", 10);
-    var cashFanTwo = new SpaceShip(510, 0, 0, "sprites/cash_wreath_ghost.png", 10);
+    var cashFanTwo = new SpaceShip(500, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanThree = new SpaceShip(-300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var cashFanFour = new SpaceShip(1300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
-    var cashFanFive = new SpaceShip(-1845, 0, 0, "sprites/cash_wreath_ghost.png", 10);
-    var cashFanSix = new SpaceShip(-2190, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
+    var cashFanFive = new SpaceShip(-2490, 0, 0, "sprites/cash_wreath_ghost.png", 10);
+    var cashFanSix = new SpaceShip(-1820, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
     var lightning = function () {
         if (cashFan.x % 6) {
             bgRange = true;
@@ -93,7 +93,7 @@ window.onload = function () {
 
             bgKillers.x -= 1;
             bgNebulaTwo.x -= 3;
-            bgNebulaOne.x -= 2;
+            bgNebulaOne.x -= 1;
             bgNebula.x -= 2;
             bgNebulaThree.x += 2.4;
             cashFan.x += .5;
@@ -111,35 +111,35 @@ window.onload = function () {
         if (bgKillersTwo.x < -3485) {
             bgKillersTwo.x = 3450;
         }
-        if (bgNebulaOne.x < -2020) {
-            bgNebulaOne.x = 2000;
+        if (bgNebulaOne.x < -2400) {
+            bgNebulaOne.x = 2810;
         }
-        if (bgNebula.x < -2020) {
-            bgNebula.x = 2000;
+        if (bgNebula.x < -2400) {
+            bgNebula.x = 2810;
         }
-        if (bgNebulaTwo.x < -2020) {
-            bgNebulaTwo.x = 2000;
+        if (bgNebulaTwo.x < -2400) {
+            bgNebulaTwo.x = 2810;
         }
-        if (bgNebulaThree.x > 2020) {
-            bgNebulaThree.x = -2000;
+        if (bgNebulaThree.x > 2810) {
+            bgNebulaThree.x = -2400;
         }
-        if (cashFan.x > 2810) {
-            cashFan.x = -1060;
+        if (cashFan.x > 3460) {
+            cashFan.x = -1140;
         }
-        if (cashFanTwo.x > 2810) {
-            cashFanTwo.x = -1060
+        if (cashFanTwo.x > 3460) {
+            cashFanTwo.x = -1140
         }
-        if (cashFanThree.x > 2810) {
-            cashFanThree.x = -1060
+        if (cashFanThree.x > 3460) {
+            cashFanThree.x = -1140
         }
-        if (cashFanFour.x > 2810) {
-            cashFanFour.x = -1060
+        if (cashFanFour.x > 3460) {
+            cashFanFour.x = -1140
         }
-        if (cashFanFive.x > 2810) {
-            cashFanFive.x = -1060
+        if (cashFanFive.x > 3460) {
+            cashFanFive.x = -1140
         }
-        if (cashFanSix.x > 2810) {
-            cashFanSix.x = -1060
+        if (cashFanSix.x > 3460) {
+            cashFanSix.x = -1140
         }
         if (bgKillers.x % 300) {
             lightning();
