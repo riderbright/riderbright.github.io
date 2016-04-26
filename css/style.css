@@ -119,25 +119,6 @@ ul {
     background-color: rgba(255, 255, 255, .18);
 }
 
-.btn-delete {
-    font-size: 1em;
-    width: 2.5em;
-    height: 1.5em;
-    background-color: rgba(255, 255, 255, .27);
-    color: #ffffff;
-    position: relative;
-    margin-top: .5em;
-    margin-right: .5em;
-    margin-left: .2em;
-    float: right;
-}
-
-.btn-delete:hover {
-    background-color: rgba(255, 255, 255, .37));
-    border: 2px solid rgba(18, 22, 22, .37);
-    box-shadow: 0 0 .09em #600aFA;
-}
-
 .btn-fresh {
     width: auto;
     background-color: rgba(255, 255, 255, .60);
@@ -259,4 +240,19 @@ ul {
 
 .vertical-align {
     align-items: center;
+}
+
+.gitRibbon:hover {
+    opacity: 1;
+}
+
+.gitRibbon {
+    opacity: .24;
+    font-size: 1em;
+    width: 3em;
+    position: relative;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: .2em;
+    float: right;
 }
