@@ -48,15 +48,16 @@ window.onload = function () {
     //use speed * modifier
 
 
-    var bgKillers = new SpaceShip(-180, -10, 0, "sprites/ryder_stylewrite_purp.png", 10);
-    var bgKillersTwo = new SpaceShip(-160, 10, 0, "sprites/ryder_wild.png", 10);
-    var bgKillersFour = new SpaceShip(-144, -51, 0, "sprites/ryder_white_neon.png", 10);
+    var bgKillers = new SpaceShip(-210, -10, 0, "sprites/ryder_stylewrite_purp.png", 10);
+    var bgKillersTwo = new SpaceShip(-190, 10, 0, "sprites/ryder_wild.png", 10);
+    var bgKillersFour = new SpaceShip(-174, -51, 0, "sprites/ryder_white_neon.png", 10);
     var bgNebula = new SpaceShip(600, 30, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaOne = new SpaceShip(1600, 42, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaTwo = new SpaceShip(0, 24, 0, "sprites/cloud_gas.png", 10);
     var bgNebulaThree = new SpaceShip(-200, 34, 0, "sprites/cloud_gas.png", 10);
     var flashOne = new SpaceShip(-4, 0, 0, "sprites/flash.png", 10);
     var flashTwo = new SpaceShip(-1200, 0, 0, "sprites/cloud_gas.png", 10);
+    //var horusOne = new SpaceShip(0, 0, 0, "sprites/horusGhost.png", 10);
     var cashFan = new SpaceShip(-1055, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanTwo = new SpaceShip(484, 0, 0, "sprites/cash_wreath_ghost.png", 10);
     var cashFanThree = new SpaceShip(-300, -200, 0, "sprites/cash_wreath_ghostOne.png", 10);
@@ -160,6 +161,7 @@ window.onload = function () {
 
         }
         if (canvasReady) {
+           //context.drawImage(horusOne.image, horusOne.x, horusOne.y);
             context.drawImage(cashFan.image, cashFan.x, cashFan.y);
             context.drawImage(cashFanTwo.image, cashFanTwo.x, cashFanTwo.y);
             context.drawImage(cashFanThree.image, cashFanThree.x, cashFanThree.y);
