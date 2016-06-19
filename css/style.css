@@ -2,7 +2,9 @@ html {
     background-color: rgba(18, 18, 19, 1);
     background-image: url("../sprites/bgPatternOne.svg");
     background-size: cover;
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    object-position: center;
 }
 
 * {
@@ -14,6 +16,9 @@ header {
     width: 100vw;
     height: 200px;
     size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    object-position: center;
 }
 
 #header {
