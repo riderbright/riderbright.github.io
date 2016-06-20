@@ -13,8 +13,8 @@ window.onload = function () {
 
     canvas = document.createElement("canvas");
     context = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = 200;
+    canvas.width = 2000;
+    canvas.height = 206;
     console.log(context);
 
     //document.body.appendChild(canvas);
@@ -141,7 +141,6 @@ window.onload = function () {
             lightning();
 
         }
-        canvas.width = window.innerWidth;
     }
 
 
@@ -161,7 +160,7 @@ window.onload = function () {
 
         }
         if (canvasReady) {
-           //context.drawImage(horusOne.image, horusOne.x, horusOne.y);
+            //context.drawImage(horusOne.image, horusOne.x, horusOne.y);
             context.drawImage(cashFan.image, cashFan.x, cashFan.y);
             context.drawImage(cashFanTwo.image, cashFanTwo.x, cashFanTwo.y);
             context.drawImage(cashFanThree.image, cashFanThree.x, cashFanThree.y);
