@@ -9,7 +9,7 @@ html {
     display: block;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow-x:visible;
     overflow-y: hidden;
     object-position: center;
 }
@@ -27,7 +27,7 @@ canvas {
     display: block;
     width: 100vw;
     height: 400;
-    overflow-x: hidden;
+    overflow-x: visible;
     overflow-y: hidden;
     object-position: center;
 }
