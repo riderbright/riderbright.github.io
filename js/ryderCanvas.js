@@ -13,8 +13,8 @@ window.onload = function () {
 
     canvas = document.createElement("canvas");
     context = canvas.getContext("2d");
-    canvas.width = 2000;
-    canvas.height = 206;
+    canvas.width = 1200;
+    canvas.height = 220;
     console.log(context);
 
     //document.body.appendChild(canvas);
