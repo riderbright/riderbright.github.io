@@ -21,10 +21,10 @@ window.onload = function () {
     document.getElementById("header").appendChild(canvas);
     
     var audioOne = new Audio("css/foxtrot_37.mp3");
-    audioOne.addEventListener('ended', function () {
-        this.currentTime = 0;
-        this.play();
-    }, false);
+    //audioOne.addEventListener('ended', function () {
+    //    this.currentTime = 0;
+    //    this.play();
+    //}, false);
     audioOne.play();
 
 
