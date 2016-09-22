@@ -13,19 +13,19 @@ window.onload = function () {
 
     canvas = document.createElement("canvas");
     context = canvas.getContext("2d");
-    canvas.width = 1200;
+    canvas.width = 1234;
     canvas.height = 220;
     console.log(context);
 
     //document.body.appendChild(canvas);
     document.getElementById("header").appendChild(canvas);
     
-    var audioOne = new Audio("css/foxtrot_37.mp3");
+    //var audioOne = new Audio("css/foxtrot_37.mp3");
     //audioOne.addEventListener('ended', function () {
     //    this.currentTime = 0;
     //    this.play();
     //}, false);
-    audioOne.play();
+    //audioOne.play();
 
 
     bgImage = new Image();

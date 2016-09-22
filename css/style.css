@@ -2,12 +2,8 @@ html {
     background-color: rgba(18, 18, 19, 1);
     background-image: url("../sprites/bgPatternOne.svg");
     background-size: cover;
-    padding-left: 0;
-    padding-right: 0;
-    display: block;
     width: 100vw;
-    height: 100vh;
-    overflow-x:hidden;
+    overflow-x: hidden;
     overflow-y: scroll;
     object-position: center;
 }
@@ -18,14 +14,9 @@ html {
 }
 
 canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100vw;
     height: 400;
-    overflow-x: visible;
+    width: 100vw;
+    overflow-x: hidden;
     overflow-y: hidden;
     object-position: center;
 }
